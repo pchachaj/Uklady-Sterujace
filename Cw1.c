@@ -76,7 +76,7 @@ void zad4()
 		_delay_ms(full_delay - light_time(full_delay, brightnes));
 		
 		brightnes += rise;
-		if(brightnes == 200 || brightnes == 0)
+		if(brightnes == 400 || brightnes == 0)
 			rise = -rise;
 	}
 }
@@ -84,7 +84,7 @@ void zad4()
 /* Zadanie 5 Fala */
 void zad5()
 {
-	unsigned long full_delay = 30;
+	unsigned long full_delay = 20;
 	uint8_t brightnes = 0;
 	uint8_t rise = 1;
 	PORTA = 0b10000000;
@@ -99,7 +99,7 @@ void zad5()
 		PORTA = pin;
 		
 		brightnes += rise;
-		if (brightnes == 200)
+		if (brightnes == 400)
 		{
 			rise = -rise;						
 		} else if(brightnes == 0) {
