@@ -1,6 +1,6 @@
 /*
 Karol Jurek
-Pawel Chahaj
+Pawel Chachaj
 */
 
 #define F_CPU 16000000UL
